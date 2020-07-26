@@ -35,6 +35,7 @@
             <?php        }
             //print_r($relatedPrograms);
             echo '</ul>';
+            
         }
     ?>
 </div>
