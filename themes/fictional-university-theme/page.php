@@ -1,17 +1,16 @@
 <?php get_header();
 
 	while(have_posts()){
-		the_post();?>
+		the_post();
+		pageBanner();
+//		pageBanner(array(
+//			'title' => 'Hello there this is the title',
+//			'subtitle' => 'Hi, this is the subtitle'//,
+			//'photo' => 'https://pocket-syndicated-images.s3.amazonaws.com/5defbf003ed2d.jpg'
+//		));
+		?>
 
-<div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg')?>);"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title"><?php the_title(); ?></h1>
-      <div class="page-banner__intro">
-        <p>Don't forget to replace me later.</p>
-      </div>
-    </div>  
-</div>
+
 
   <div class="container container--narrow page-section">
 
